@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@400;500;600&family=Montserrat:ital,wght@0,800;1,700&family=Roboto:wght@700&family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;  
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    height: 100%;
+    background-color:#221411;
+    color: #fff;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 30px solid transparent;
+    border-image: url("./imagens/border.png") 150 round;
+
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 5rem;
+
+    grid-template-areas:
+    "header header header header "
+    " section section main main"
+    "article article article article"
+    "aside aside . . "
+    "footer footer footer footer"
+    ;   
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+section{
+    grid-area: section;
+}
+
+article{
+    grid-area: article;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+/* header{
+    background-color: blue;
+}
+
+main{
+    background-color: #cddd5f;
+}
+article{
+    background-color: yellow;
+}
+
+aside{
+    background-color: pink;
+}
+footer{
+    background-color: green;
+} */
+/* nav{
+    background-color: brown;
+} */
+
+h1{
+    color: #fff;
+    text-align:left;
+    margin: 20px 0px 20px 0px;
+    font-family: Domine, sans-serif;
+    font-size: 1.9rem;
+    height: auto;
+    width: 100%;
+}
+
+hr.um{
+    border-color: #A45A49;    
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    color:#fff ;
+    font-size: 1.563rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+    color:#A45A49;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+
+}
+
+nav ul li a:hover{
+    color: hsla(25, 89%, 39%, 0.501) ;
+
+}
+
+header .menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color:#fff ;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+    color:#FFF2E780;
+    padding-top: 10px;  
+    list-style-type: none;
+}
+
+main{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: white;
+    margin-bottom: 2.4rem;   
+   
+}
+
+main h2{
+    font-family: Domine, sans-serif;
+    font-size: 1.375rem;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    text-align: center; 
+
+}
+
+main p{
+    color: #A45A49;
+    text-align: left;
+    font-family: "Domine", sans-serif; 
+    line-height: 1.6rem;
+    padding-left: 50px;  
+    text-align: center; 
+}
+
+main img{
+    border-radius: 20px;
+}
+
+.btn-box .btn {
+    padding: 20 45px;
+    background: #FFF2E780;
+    color:#A45A49;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #0b090935;
+    border-radius: 0.5rem;
+    padding: 0.4rem;  
+    font-size: 25px; 
+    font-family: "Domine", sans-serif;  
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btn-box .btn:hover{
+    color:  hsla(25, 89%, 39%, 0.501) ;
+    
+}
+
+section .btn-box{
+    padding-left: 25px;      
+}
+
+section img{
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.atores{
+    color:#ed6847;
+    padding-top: 5px;  
+}
+
+
+nav ul li{
+    list-style-type: none;
+
+}
+
+.personagens{
+    line-height: 2rem;
+    color: #A45A49;
+    font-family: Domine, sans-serif;
+}
+
+article{
+    line-height: 1.6rem;
+    max-width: 100%;
+    font-family: Domine, sans-serif; 
+    font-family: Noto Serif, sans-serif; 
+    font-size: 15px;
+}
+
+article .avaliacoes{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.avaliacoes p i{
+    color: #f8ce0b;
+}
+
+article .comentario1 i{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #f8ce0b;
+
+
+}
+
+article .comentario2 i{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #f8ce0b;
+}
+
+h3{
+    color: #ed340b;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 1.438rem;   
+}
+
+.comentario1{
+   font-family: Noto Serif, sans-serif; 
+   font-size: 15px;
+   padding-bottom: 10px;
+}
+
+.comentario2{
+   font-family: Noto Serif, sans-serif; 
+   font-size: 15px;
+   padding-bottom: 10px;
+}
+
+aside{
+    font-size: 17px;
+    font-family: Domine, sans-serif;
+    line-height: 20px;
+    color: #fff;
+
+}
+
+aside div{
+    padding-left: 3.4rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 2rem;
+}
+
+img{
+    border-radius: 25%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.tele{
+    width: 275px;
+    font-family: Domine, sans-serif;
+
+    
+}
+
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;   
+}
+
+footer{
+    color: #FFF2E7;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Teste de medias querys */
+@media only screen and (max-width: 768px) {
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1{
+    font-size: 24px;
+    padding-left: 0;
+    width: 100%;
+}
+
+nav .menu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    line-height: 20px;
+
+}
+
+nav ul li a{
+    color:#A45A49;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: hsla(25, 50%, 64%, 0.501) ;
+}  
+
+main p{
+    text-align: left;
+    padding-left: 0;
+}
+
+main h2{
+    text-align: left;
+    color: #ed340b;
+    font-size: 20px;
+
+}
+
+main img{
+    height: 200px;
+    width: 18rem;
+    padding: 20px 2px;    
+}
+
+article {
+    
+    
+
+}
+
+        
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
